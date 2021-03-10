@@ -1,11 +1,11 @@
 import { User } from "./models/User";
 
-const user = new User({ id: 1, name: "Jane", age: 35 });
+const collection = User.buildUserCollection();
 
-user.on("save", () => {
-  console.log(user);
+collection.on("change", () => {
+  console.log(collection);
 });
 
-user.save();
+collection.fetch();
 
 // Generating tsconfig file turns on Strict Type-Checking Options {default behavior is "off")
