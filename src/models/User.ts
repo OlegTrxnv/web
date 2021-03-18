@@ -30,6 +30,11 @@ export class User extends Model<UserProps> {
       User.buildUser(json)
     );
   }
+
+  setRandomAge(): void {
+    const age = Math.round(Math.random() * 100);
+    this.set({ age });
+  }
 }
 
 // Integrated classes are hardcoded, it does limit the flexibility of composition

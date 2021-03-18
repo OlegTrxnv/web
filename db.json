@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Julie",
       "age": 25
+    },
+    {
+      "name": "New user",
+      "age": 30,
+      "id": 5
     }
   ]
 }
